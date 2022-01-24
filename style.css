@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .5s;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+ul li{
+    list-style: none;
+    margin-left: -4px;
+}
+.text-start{
+    text-align: left;
+}
+.text-end{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.container{
+    width: 1120px;
+    margin: auto;
+    max-width: 100%;
+}
+.w-100{
+    width: 100%;
+}
+.w-75{
+    width: 75%;
+}
+.w-50{
+    width: 50%;
+}
+.w-25{
+    width: 25%;
+}
+.my-5{
+    margin: 50px 0;
+}
+.py-5{
+    padding: 50px 0;
+}
+.m-auto{
+    margin: auto;
+}
+
+/* *********** HEADER CSS ********** */
+
+.header{
+    background:#000;
+}
+.header-logo{
+    width: 30%;
+}
+.header-logo a{}
+.header-logo img {
+    width: 76px;
+    position: relative;
+    top: 9px;
+}
+.header-menu{
+    width: 70%;
+}
+.header-menu ul{}
+.header-menu ul li {
+    display: inline-block;
+    line-height: 59px;
+}
+.header-menu ul li a {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    padding: 0 20px;
+}
+.header-menu ul li a:hover{}
+
+
+
+/* ************ DROUPDOWN MENU CSS ************* */
+.header-menu{}
+.header-menu ul{}
+.header-menu ul li{
+    position: relative;
+}
+.header-menu ul li ul{
+    position: absolute;
+    width: 100px;
+    top: 100%;
+    left: 0;
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+/* .header-menu ul li ul li a{
+    background: #fff;
+} */
+.header-menu ul li ul li a:hover{}
+
+.header-menu ul li{
+    position: relative;
+}
+.header-menu ul li a::after {
+    content: "";
+    width: 63%;
+    height: 3px;
+    background: #fff;
+    top: 66%;
+    left: 20%;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaleX(0);
+}
+.header-menu ul li a:hover::after{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* ********* BENNER CSS************ */
+.benner{
+ background: url(./img/benner.jpg) no-repeat top center;
+ background-size: cover;
+ padding: 200px 0;
+}
+
+.benner h2 {
+    font-size: 50px;
+    font-weight: 900;
+}
+.benner p {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+.benner button{}
+
+.duffult-btn1 {
+    background: #000;
+    color: #fff;
+    padding: 18px 39px;
+    display: inline-block;
+    font-size: 19px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.duffult-btn2 {
+    color: #000;
+    background: #fff;
+    padding: 18px 39px;
+    display: inline-block;
+    font-size: 19px;
+    border-radius: 10px;
+    margin-right: 15px;
+
+}
+
+.duffult-btn1:hover{
+    color: #000;
+    background: #fff;
+}
+.duffult-btn2:hover{
+    color: #fff;
+    background: #000;
+}
+
+
+/* ************ ABOUT CSS ************ */
+.about{
+    background: #87a471;
+    padding: 20px 0;
+}
+.about-heading{}
+.about-heading h2 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 900;
+    position: relative;
+    margin: 25px 0;
+}
+.deffult-line h2::after {
+    content: "";
+    width: 28%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 36%;
+    top: 93%;
+}
+.about-item{}
+.about-content p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 36px;
+}
+.about-img img {
+    width: 50%;
+}
+
+/* ******** service css ******* */
+.service {
+    background: #606a64;
+    padding: 42px 0;
+}
+.service-heading{
+    color: #fff;
+}
+.service-heading h2 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 900;
+    position: relative;
+    /* margin: 19px 0; */
+}
+.service-heading h3 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+.service-heading p {
+    font-size: 17px;
+    line-height: 28px;
+}
+/* .service-items{
+    position: relative;
+    width: 100%;
+}
+.service-box {
+    border: 1px solid red;
+    padding: 40px 42px;
+    background: #fff;
+    width: 30.3%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.s-icon{
+    width: 20% ;
+}
+.s-icon img{}
+.s-content{
+    width: 80%;
+}
+.s-content h2{}
+.s-content p{} */
+.service-item{
+    margin: 30px 0;
+}
+.service-box {
+    width: 28.33%;
+    box-sizing: border-box;
+    margin-right: 5%;
+    background: #fff;
+    padding: 60px 20px;
+    border-radius: 20px;
+}
+.s-icon {
+    width: 16%;
+    height: 94px;
+    margin-right: 8%;
+}
+.s-content {
+    width: 80%;
+}
+.service-box:last-child{
+ margin-right: 0;
+}
+
+
+
+.fortfolio-section{
+    background: #87a471;
+    padding: 30px 0;
+}
+.fortpolio-item {
+    width: 45%;
+    border: 1px solid rgb(250, 245, 245);
+    box-sizing: border-box;
+    margin-right: 5%;
+}
+.fortpolio-item img{
+    width: 100%;
+}
+.fortpolio-item p{
+    color: #536d83;
+    font-size: 18px;
+}
+.fortpolio-item h5{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.f-content {
+    color: #fff;
+    padding: 45px 0;
+}
+.f-content h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.f-img{
+    width: 22%;
+    box-sizing: border-box;
+    margin-right: 2%;
+    padding: 40px 0;
+}
+
+
+/* TEAMS SECTIONS CSS */
+.team{
+    background: #5b9776;
+    padding: 30PX 0;
+   
+}
+.team-heading {
+    font-size: 27px;
+    color: #fff;
+    position: relative;
+}
+.team-item{
+    margin-top: 45px;
+}
+.t-img {
+    width: 30.3%;
+    box-sizing: border-box;
+    margin-right: 3%;
+ 
+}
+
+.t-menu{
+
+}
+.t-menu ul{}
+.t-menu ul li{
+    display: inline-block;
+}
+.t-menu ul li a {
+    padding: 8px 5px;
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+}
+.t-menu ul li a:hover{
+    color: #567886;
+}
+
+/* FOOTER SECTION CSS */
+.footer {
+    background: #606a64;
+    padding: 90px 0;
+    color: #fff;
+}
+.footer h1{
+    font-size: 35px;
+    font-weight: 900;
+}
+.footer p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.footer-btn a {
+    color: #fff;
+    display: inline-block;
+    background: #00bc9c;
+    padding: 12px 35px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+.footer-btn a:hover{
+    background: #354a5e;
+    color:#fff;
+}
+.footer-bottom{
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+}
